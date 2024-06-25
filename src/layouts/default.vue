@@ -5,8 +5,11 @@ const randomInts = Array.from({ length: 5 }, () =>
 </script>
 
 <template>
-	<main>
-		<header class="flex w-full sticky top-0 px-4 py-2 inset-x-0 gap-2">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	</head>
+	<main class="bg-zinc-900 text-zinc-200 min-h-screen overscroll-none">
+		<header class="flex w-full sticky top-0 px-4 py-2 inset-x-1 gap-2">
 			<div class="w-full py-2">
 				<NuxtLink to="/" class="text-2xl font-bold">
 					Nuxt Jereko
