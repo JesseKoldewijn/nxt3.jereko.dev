@@ -5,15 +5,20 @@ const randomInts = Array.from({ length: 5 }, () =>
 </script>
 
 <template>
-	<header>
-		<nav>
-			<ul>
-				<li><NuxtLink to="/count">Count</NuxtLink></li>
-				<li v-for="num in randomInts" :key="num">
-					<NuxtLink :to="`/count/${num}`">Count {{ num }}</NuxtLink>
-				</li>
-			</ul>
-		</nav>
-	</header>
-	<slot />
+	<main>
+		<header>
+			<nav>
+				<ul>
+					<li><NuxtLink to="/count">Count</NuxtLink></li>
+					<li>
+						<NuxtLink to="/count/1">Count 1</NuxtLink>
+					</li>
+					<li><NuxtLink to="/count/100">Count 100</NuxtLink></li>
+					<li><NuxtLink to="/count/250">Count 250</NuxtLink></li>
+					<li><NuxtLink to="/count/500">Count 500</NuxtLink></li>
+				</ul>
+			</nav>
+		</header>
+		<slot />
+	</main>
 </template>

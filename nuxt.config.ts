@@ -2,4 +2,7 @@
 export default defineNuxtConfig({
 	rootDir: "./src",
 	devtools: { enabled: true },
+	app: {
+		layoutTransition: { name: "layout", mode: "out-in" },
+	},
 });
