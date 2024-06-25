@@ -5,4 +5,11 @@ export default defineNuxtConfig({
 	app: {
 		layoutTransition: { name: "layout", mode: "out-in" },
 	},
+	css: ["~/assets/styles/tailwind.css"],
+	postcss: {
+		plugins: {
+			tailwindcss: {},
+			autoprefixer: {},
+		},
+	},
 });
