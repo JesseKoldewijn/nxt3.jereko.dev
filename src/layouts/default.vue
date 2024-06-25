@@ -9,6 +9,7 @@ const randomInts = Array.from({ length: 5 }, () =>
 		<header>
 			<nav>
 				<ul>
+					<li><NuxtLink to="/">Home</NuxtLink></li>
 					<li><NuxtLink to="/count">Count</NuxtLink></li>
 					<li>
 						<NuxtLink to="/count/1">Count 1</NuxtLink>
