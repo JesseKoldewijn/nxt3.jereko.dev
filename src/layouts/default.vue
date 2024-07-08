@@ -1,7 +1,5 @@
 <script setup lang="ts">
-const randomInts = Array.from({ length: 5 }, () =>
-	Math.floor(Math.random() * 100)
-);
+
 </script>
 
 <template>
